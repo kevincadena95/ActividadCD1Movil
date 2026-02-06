@@ -1,0 +1,17 @@
+
+export const Ejercicio2 = () => {
+
+const numeros: number[]=[1, 5, 6, 7];
+
+const suma = numeros.reduce((acumulador: number, numActual: number): number => {
+    
+    return acumulador + numActual;
+})
+
+    return (
+    <div>
+        <h3 className="font-bold">Ejercicio 2:</h3> 
+        <span>La suma de este arreglo ({numeros.join(", ")}) es: {suma}</span>
+    </div>
+    )
+}

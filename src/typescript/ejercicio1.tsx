@@ -2,6 +2,7 @@
 export const Ejercicio1 = () => {
 
     const lado: number = 5;
+    
     const areaCuadrado = (lado: number): number => {
     return lado * lado;
 }
