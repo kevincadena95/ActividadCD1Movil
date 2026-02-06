@@ -1,6 +1,8 @@
 import { Ejercicio1 } from "./typescript/ejercicio1";
 import { Ejercicio2 } from "./typescript/ejercicio2";
 import { Ejercicio3 } from "./typescript/ejercicio3";
+import { Ejercicio4 } from "./typescript/ejercicio4";
+import { Ejercicio5 } from "./typescript/ejercicio5";
 
   const App = () => {
   return (
@@ -12,6 +14,10 @@ import { Ejercicio3 } from "./typescript/ejercicio3";
     <Ejercicio2/>
     <br /><hr />
     <Ejercicio3/>
+    <br /><hr />
+    <Ejercicio4/>
+    <br /><hr />
+    <Ejercicio5/>
     </div>
   )
 }

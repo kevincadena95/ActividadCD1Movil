@@ -3,10 +3,10 @@ export const Ejercicio2 = () => {
 
 const numeros: number[]=[1, 5, 6, 7];
 
-const suma = numeros.reduce((acumulador: number, numActual: number): number => {
+const suma: number = numeros.reduce((acumulador: number, numActual: number): number => {
     
     return acumulador + numActual;
-})
+},0)
 
     return (
     <div>
