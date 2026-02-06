@@ -11,7 +11,7 @@ const suma = numeros.reduce((acumulador: number, numActual: number): number => {
     return (
     <div>
         <h3 className="font-bold">Ejercicio 2:</h3> 
-        <span>La suma de este arreglo ({numeros.join(", ")}) es: {suma}</span>
+        <span>La suma de los elementos de este arreglo ({numeros.join(", ")}) es: {suma}</span>
     </div>
     )
 }

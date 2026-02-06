@@ -1,5 +1,6 @@
 import { Ejercicio1 } from "./typescript/ejercicio1";
 import { Ejercicio2 } from "./typescript/ejercicio2";
+import { Ejercicio3 } from "./typescript/ejercicio3";
 
   const App = () => {
   return (
@@ -9,7 +10,8 @@ import { Ejercicio2 } from "./typescript/ejercicio2";
     <Ejercicio1/>
     <br /><hr />
     <Ejercicio2/>
-    
+    <br /><hr />
+    <Ejercicio3/>
     </div>
   )
 }
