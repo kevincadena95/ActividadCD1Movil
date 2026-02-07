@@ -25,23 +25,24 @@ const alumnos: Alumno[] = [
         calificacion: 9,
     }
 ];
+    //cantidad de calificaciones
+    const cantCalif: number = alumnos.filter(alumnos => alumnos.calificacion).length;
+    
 
-const cantCalif: number = alumnos.filter(alumnos => alumnos.calificacion).length;
+    //promediar la calfificacion
+    const promediar = (alumnos: Alumno[]): number => {
 
-const sumaCalif: number = alumnos.reduce((sumaTotal: number, alumno: Alumno): number => {
-        return sumaTotal + alumno.calificacion;
-    },0);
+        const sumaPromedio= alumnos.reduce 
+        ((acumulador: number, numALumnos: Alumno) => acumulador + numALumnos.calificacion, 0);
 
-
-    const promedio = sumaCalif/cantCalif;
-
-
+    return sumaPromedio/cantCalif;
+}
 
     return (
     <div>
         <h3 className="font-bold">Ejercicio 4:</h3> 
         <span>
-            El promedio de las calificaciones ({alumnos.map(alumno => alumno.calificacion).join(", ")}) respectivas de los alumnos {alumnos.map(alumno => alumno.nombre).join(", ")} es de: {promedio.toFixed(2)}
+            El promedio de las calificaciones ({alumnos.map(alumno => alumno.calificacion).join(", ")}) respectivas de los alumnos {alumnos.map(alumno => alumno.nombre).join(", ")} es de: {promediar(alumnos)}
             </span>
     </div>
     )
